@@ -9,3 +9,7 @@ And then run the Python script by using
 ```python
 py app.py
 ```
+And then to use it send in Discord
+```
+!sendcmd *Command Here*
+```
