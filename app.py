@@ -44,14 +44,6 @@ async def on_ready():
 
 @bot.command()
 async def sendcmd(ctx, *, command):
-    if command.startswith('!'):
-        await ctx.send('Invalid command. Please do not use "!".')
-        return
-
-    if 'curl' in command.lower():
-        await ctx.send('The `curl` command is blocked.')
-        return
-
     try:
         result = subprocess.check_output(command, shell=True, stderr=subprocess.STDOUT, text=True)
         await ctx.send(f'Command executed successfully:\n```{result}```')
