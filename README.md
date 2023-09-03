@@ -1,5 +1,7 @@
 # CMDBot
 CMDBot is a Discord bot that let's someone control the person that ran the script's CMD through Discord.
+
+You can also now use Y/N Prompts and take a screenshot!
 # How can I use it?
 First install all the dependencies using pip3.
 ```python
