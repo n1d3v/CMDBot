@@ -4,8 +4,8 @@ CMDBot is a Discord bot that let's someone control the person that ran the scrip
 First install all the dependencies using pip3.
 ```python
 pip install discord pillow pyautogui
-And then run the Python script by using
 ```
+And then run the Python script by using
 ```python
 py app.py
 ```
