@@ -5,7 +5,7 @@ You can also now use Y/N Prompts and take a screenshot!
 # How can I use it?
 First install all the dependencies using pip3.
 ```python
-pip install discord pillow pyautogui
+pip install discord.py pillow pyautogui
 ```
 And then run the Python script by using
 ```python
